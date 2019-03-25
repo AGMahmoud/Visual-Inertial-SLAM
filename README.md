@@ -16,7 +16,7 @@ Implement visual-inertial simultaneous localization and mapping (SLAM) using Ext
 
 * **Intrinsic Calibration**: stereo baseline ![](https://latex.codecogs.com/svg.latex?b) and camera calibration matrix ![](https://latex.codecogs.com/svg.latex?\mathbf{K}):
 
-  ![](https://latex.codecogs.com/svg.latex?\mathbf{K}&space;=\begin{bmatrix}fs_u&space;&&space;0&space;&&space;c_u\\&space;0&space;&&space;fs_v&space;&&space;c_v&space;\\&space;0&space;&&space;0&space;&&space;1\end{bmatrix})
+  ![](https://latex.codecogs.com/svg.latex?\mathbf{K}=\begin{bmatrix}&space;fs_u&0&c_u\\0&fs_v&c_v\\0&0&1\end{bmatrix})
 
 * **Extrinsic Calibration**: the transformation ![](https://latex.codecogs.com/svg.latex?_CT_I&space;\in&space;SE(3)) from the IMU to left camera frame.
 

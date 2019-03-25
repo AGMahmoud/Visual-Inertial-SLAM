@@ -8,17 +8,17 @@ University of California, San Diego, 2019
 
 Implement visual-inertial simultaneous localization and mapping (SLAM) using Extended Kalman filter. Synchronized measurements from a high-quality IMU and a stereo camera have been provided. The data is obtained from [KITTI dataset Raw data](http://www.cvlibs.net/datasets/kitti/raw_data.php?type=residential) and data pre-processing has been completed. The data includes:
 
-* **IMU Measurements**: linear velocity $v_t \in \mathbb{R}^3$ and angular velocity $\omega_t \in \mathbb{R}^3$ measured in the body frame of the IMU 
+* **IMU Measurements**: linear velocity ![](https://latex.codecogs.com/svg.latex?v_t&space;\in&space;\mathbb{R}^3) and angular velocity ![](https://latex.codecogs.com/svg.latex?\omega_t&space;\in&space;\mathbb{R}^3) measured in the body frame of the IMU 
 
-* **Stereo Camera Images**: pixel coordinates $z_t \in \mathbb{R}^{4\times M}​$ of detected visual features with precomputed correspondences between the left and the right camera frames.
+* **Stereo Camera Images**: pixel coordinates  ![](https://latex.codecogs.com/svg.latex?z_t&space;\in&space;\mathbb{R}^{4\times&space;M}) of detected visual features with precomputed correspondences between the left and the right camera frames.
 
-* **Time Stamps**: time stamps $\tau​$ in UNIX standard seconds-since-the-epoch.
+* **Time Stamps**: time stamps ![](https://latex.codecogs.com/svg.latex?\tau) in UNIX standard seconds-since-the-epoch.
 
-* **Intrinsic Calibration**: stereo baseline $b$ and camera calibration matrix $\mathbf{K}​$:
+* **Intrinsic Calibration**: stereo baseline ![](https://latex.codecogs.com/svg.latex?b) and camera calibration matrix ![](https://latex.codecogs.com/svg.latex?\mathbf{K}):
 
-  $$\mathbf{K} =\begin{bmatrix}fs_u & 0 & c_u\\ 0 & fs_v & c_v \\ 0 & 0 & 1\end{bmatrix} ​$$
+  ![](https://latex.codecogs.com/svg.latex?\mathbf{K}&space;=\begin{bmatrix}fs_u&space;&&space;0&space;&&space;c_u\\&space;0&space;&&space;fs_v&space;&&space;c_v&space;\\&space;0&space;&&space;0&space;&&space;1\end{bmatrix})
 
-* **Extrinsic Calibration**: the transformation $_CT_I \in SE(3)$ from the IMU to left camera frame.
+* **Extrinsic Calibration**: the transformation ![](https://latex.codecogs.com/svg.latex?_CT_I&space;\in&space;SE(3)) from the IMU to left camera frame.
 
 ### Requirements
 

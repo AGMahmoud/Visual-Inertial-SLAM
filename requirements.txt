@@ -1,0 +1,7 @@
+numpy
+imageio
+matplotlib
+tqdm
+scipy
+imageio-ffmpeg
+transforms3d
